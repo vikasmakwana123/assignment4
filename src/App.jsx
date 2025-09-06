@@ -5,6 +5,7 @@ import About from './About'
 import UserInfo from './UserInfo'
 import Home from './Home'
 import Navbar from './Navbar'
+import PageNotFound from './assets/PageNotFound'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,7 @@ function App() {
   <Route path="/" element=<Home/> />
   <Route path="/about" element=<About/> />
   <Route path="/userinfo" element=<UserInfo/> />
-  <Route path="*" element={<h1>Page Not Found</h1>} />
+  <Route path="*" element=<PageNotFound/> />
   
 </Routes>
 </>
